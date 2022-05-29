@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HOME</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="swiper-container vertical-slider">
+      <div class="swiper-wrapper vertical-slider__wrapper">
+        <div class="swiper-slide vertical-slider__slide">
+            <h1 class="slide1_h1">Hello, World!</h1>
+            <h3 class="slide1_h3">Let's dive into the world of computers!</h3>
+        </div>
+        <div class="swiper-slide vertical-slider__slide">
+            <h1 class="slide2_h1">About Me</h1>
+            <div class="split">
+                <div class="split-item split-left">
+                    <div class="split-left__inner">
+                        <img class="icon" src="./dino.svg" name="icon" width="400px">
+                        <h4 class="slide2_h4">NAME: Yuuki Osada</h4>
+                        <h4 class="slide2_h4">Email: r.rstudio.c@gmail.com</h4>
+                    </div><!--split-left__inner-->
+                </div><!--split-item split-left-->
+                <div class="split-item split-right">
+                    <div class="split-right__inner">
+                        <h3 class="slide2_h3">[Data Analysis]</h3>
+                        <h4 class="slide2_h4">PCA using R</h4>
+                        <h3 class="slide2_h3">[3D simulation]</h3>
+                        <h4 class="slide2_h4">Spore dispersal of Myxogastria investigated using OpenFOAM</h4>
+                        <h2 class="slide2_h2_Skills">Skills</h2>
+                    </div><!--split-right__inner-->
+                </div><!--split-item split-right-->
+            </div><!--split-->
+        </div>
+        <div class="swiper-slide vertical-slider__slide">
+            <span class="s-right2-text">3D simulation</span>
+            <span class="s-right2-sub">I developed an easy to use system for 3D simulation.</span>
+            <span class="s-right2-middle_1">The name is BSSO!</span>
+            <span class="s-right2-middle_2">Let`s enjoy the simulation using BSSO!</span>
+            <div class="button09" style="margin-top: 580px">
+                <a class="button09_a" href="https://myxogastria0808.github.io/BSSO/"  target="_blank"  rel="noopener noreferrer">More</a>
+            </div>
+        </div>
+        </div>
+        <div class="swiper-slide vertical-slider__slide">SLIDE 4</div>
+        <div class="swiper-slide vertical-slider__slide">SLIDE 5</div>
+      </div>
+      <div class="swiper-pagination vertical-slider__pagination"></div>
+    </div>
+
+    <!-- CDN読み込み -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- JSファイル読み込み -->
+    <script src="script.js"></script>
+  </body>
+</html>
