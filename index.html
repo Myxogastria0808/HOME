@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta name="theme-color" content="#66cdaa">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="./style.css">  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="./loading.js"></script>
+  <script type="text/javascript" src="./leap_button.js"></script>
+  <link rel="shortcut icon" href="./dino.ico">
+  <title>YUUKI OSADA</title>
+</head>
+<body>
+        <!-------------------------shutter animation---------------------------------->
+        <div id="loader" class="shutter_1">
+          <div id="cloud"></div>
+          <div id="eclipse"></div>
+        </div>
+        <!-------------------------Pageleap animation---------------------------------->
+        <div id="page_top">
+          <a id="leap_a" href="#">
+              <div class="fluid"></div>
+          </a>
+        </div>
+
+<div class="background-img">
+  <div class="img_div">
+    <img id="img_PC" src="./Hello_World_PC.webp">
+    <img id="img_mobile" src="./Hello_World.webp">
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<div class="area js-area">
+  <div class="wrap">
+     <!-- ↓　アニメーションさせる要素 -->
+     <div class="item item01 item_story_slide js-item js-waku01">
+        <span>
+          About Me
+        </span>
+     </div>
+     <!-- <div class="item item02 js-item js-waku02"></div> -->
+     <div class="item item02 item_story_card js-item js-item04"><span>
+        My Name
+        <br>
+        YUUKI OSADA
+     </span></div>
+     <div class="item item03 item_story_card js-item js-item05"><span>
+        Address
+        <br>
+        Hyogo, Japan
+     </span></div>
+     <div class="item item04 item_story_card js-item js-item07"><span>
+        Skill
+        <br>
+        <i class="fa-brands fa-r-project fa-2x"></i>
+        <i class="fa-brands fa-html5 fa-2x"></i>
+        <i class="fa-brands fa-css3-alt fa-2x"></i>
+     </span></div>
+     <div class="item item05 item_story_card js-item js-item08"><span>
+      Learning
+      <br>
+      <i class="fa-brands fa-python fa-2x"></i>
+      <i class="fa-brands fa-golang fa-2x"></i>
+      <i class="fa-brands fa-js fa-2x"></i>
+     </span></div>
+     <!-- <div class="item item07 item_story_card js-item js-item09"><span>
+        平成14年
+        <br>
+        創立100周年
+     </span></div>
+     <div class="item item07 item_story_card js-item js-item10"><span>
+        平成15年
+        <br>
+        科学総合コース設置
+     </span></div>
+     <div class="item item07 item_story_card js-item js-item11"><span>
+        平成31年
+        <br>
+        SSHの指定を受ける
+     </span></div> -->
+     <div class="item item06 item_story_card js-item js-item06"><span>
+        Contact
+        <br>
+        r.rstudio.c@gmail.com
+        <br>
+
+        <nav class="menu">
+          <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open"/>
+          <label class="menu-open-button" for="menu-open">
+            <span class="hamburger hamburger-1"></span>
+            <span class="hamburger hamburger-2"></span>
+            <span class="hamburger hamburger-3"></span>
+          </label>
+          
+          <a href="https://twitter.com/golang99463275" target="_blank"  rel="noopener noreferrer" class="menu-item"><i class="fa-brands fa-twitter"></i></a>
+          <a href="https://www.facebook.com/Hello.0808" target="_blank"  rel="noopener noreferrer" class="menu-item"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://github.com/Myxogastria0808" target="_blank"  rel="noopener noreferrer" class="menu-item"><i class="fa-brands fa-github"></i></a>
+          <a href="#" target="_blank"  rel="noopener noreferrer" class="menu-item"> <i class="fa fa-envelope"></i> </a>
+          <a href="https://www.instagram.com/openfoam001/" target="_blank"  rel="noopener noreferrer" class="menu-item"><i class="fa-brands fa-instagram"></i></a>
+        
+        </nav>
+        
+        
+        <!-- filters -->
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
+            <defs>
+              <filter id="shadowed-goo">
+                  
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feGaussianBlur in="goo" stdDeviation="3" result="shadow" />
+                  <feColorMatrix in="shadow" mode="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 1 -0.2" result="shadow" />
+                  <feOffset in="shadow" dx="1" dy="1" result="shadow" />
+                  <feBlend in2="shadow" in="goo" result="goo" />
+                  <feBlend in2="goo" in="SourceGraphic" result="mix" />
+              </filter>
+              <filter id="goo">
+                  <feGaussianBlur in="SourceGraphic" result="blur" stdDeviation="10" />
+                  <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo" />
+                  <feBlend in2="goo" in="SourceGraphic" result="mix" />
+              </filter>
+            </defs>
+        </svg>
+        <!-- partial -->
+        
+     </span></div>
+      <!-- ↑　アニメーションさせる要素 -->
+  </div>
+</div>
+
+
+
+
+
+
+
+<!-- partial:index.partial.html -->
+<div class="timeline-container" id="timeline-1">
+  <div class="timeline-header">
+    <h2 class="timeline-header__title">My creation</h2>
+    <h3 class="timeline-header__subtitle">Development Progress</h3>
+  </div>
+  <div class="timeline">
+      <div class="timeline-item" data-text="BSSO">
+        <a href="https://myxogastria0808.github.io/BSSO/" target="_blank">
+        <div class="timeline__content"><img class="timeline__img" src="./BSSO.webp"/>
+          <h2 class="timeline__content-title">BSSO</h2>
+          <p class="timeline__content-desc">We created this system to provide a fluid simulation experience for the general public. This system is my completely original system.</p>
+        </div>
+        </a>
+      </div>
+      <div class="timeline-item" data-text="The Quest for the 4 Dmensions">
+        <a href="https://myxogastria0808.github.io/The-Quest-for-the-4-Dimensions/" target="_blank">
+        <div class="timeline__content"><img class="timeline__img" src="./4D.webp"/>
+          <h2 class="timeline__content-title">The Quest for the 4D</h2>
+          <p class="timeline__content-desc">
+            What do you imagine the existence of 4 dimensions world？ Living in 3 dimensions world makes it difficult to picture the world. In fact, we can image the world.
+          </p>
+        </div>
+        </a>
+      </div>
+    <div class="timeline-item" data-text="Ono High School">
+      <a href="https://myxogastria0808.github.io/OHS/" target="_blank">
+      <div class="timeline__content"><img class="timeline__img" src="./小野高校.webp"/>
+        <h2 class="timeline__content-title">Ono High School</h2>
+        <p class="timeline__content-desc">I am creating a website for my high school. This site development has now taken over 6 months to complete. Through the development of this site, I realized that all the wonderful sites in the world are the result of the unparalleled efforts of many engineers. You can see the website in development.</p>
+      </div>
+      </a>
+    </div>
+    <div class="timeline-item" data-text="QGIS">
+      <a href="https://myxogastria0808.github.io/QGIS/" target="_blank">
+      <div class="timeline__content"><img class="timeline__img" src="./QGIS.webp"/>
+        <h2 class="timeline__content-title">QGIS</h2>
+        <p class="timeline__content-desc">I have developed the hazard map in Osu City, Ehime Prefecture using some GIS data created by the Geospatial Information Authority of Japan. I realized to put an interactive hazard map on the website using QGIS2web! Let's see the dynamic hazard map which you have never seen yet!</p>
+      </div>
+      </a>
+    </div>
+    <div class="timeline-item" data-text="PCA">
+      <a href="https://myxogastria0808.github.io/AboutPCA/" target="_blank">
+        <div class="timeline__content"><img class="timeline__img" src="./PCA.webp"/>
+          <h2 class="timeline__content-title">PCA</h2>
+          <p class="timeline__content-desc">
+            I developed a framework of PCA (R programming language). 
+            One of the most wonderful factors of it is the function to compress multidimensional vectors into three dimensions easily. </p>
+        </div>
+      </a>
+    </div>
+    <!--<div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://blog.istanbul1881.com/wp-content/uploads/2016/08/atat%C3%BCrk-%C3%BCn-inan%C4%B1lmaz-karizmatik-fotograf%C4%B1_861050.jpg"/>
+        <h2 class="timeline__content-title">1916</h2>
+        <p class="timeline__content-desc">Promotedto general in 1916, at age 35, he liberated two major provinces in eastern Turkey thatyear. In the next two years, he served as commander of several Ottoman armies inPalestine, Aleppo, and elsewhere, achieving another major victory by stopping the enemyadvance at Aleppo.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://manisanokta.com/wp-content/uploads/2014/07/ataturk-20.jpg"/>
+        <h2 class="timeline__content-title">1919</h2>
+        <p class="timeline__content-desc">On May 19, 1919, Mustafa Kemal Pasha landed in the Black Sea port of Samsun to startthe War of Independence. In defiance of the Sultan's government, he rallied a liberationarmy in Anatolia and convened the Congress of Erzurum and Sivas which established thebasis for the new national effort under his leadership.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg"/>
+        <h2 class="timeline__content-title">1920</h2>
+        <p class="timeline__content-desc">
+          On April 23, 1920, the GrandNational Assembly was inaugurated. Mustafa Kemal Pasha was elected to its Presidency.
+          Fighting on many fronts, he led his forces to victory against rebels and invadingarmies. Following the Turkish triumph at the two major battles at Inonu in Western Turkey,the Grand National Assembly conferred on Mustafa Kemal Pasha the title ofCommander-in-Chief with the rank of Marshal.
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
+        <h2 class="timeline__content-title">1922</h2>
+        <p class="timeline__content-desc">At the end of August 1922, the Turkish armieswon their ultimate victory. Within a few weeks, the Turkish mainland was completelyliberated, the armistice signed, and the rule of the Ottoman dynasty abolished</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg"/>
+        <h2 class="timeline__content-title">1923</h2>
+        <p class="timeline__content-desc">In July 1923, the national government signed the Lausanne Treaty with Great Britain,France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa Kemal Pasha wasunanimously elected President of the Republic.</p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
+        <h2 class="timeline__content-title">1934</h2>
+        <p class="timeline__content-desc">
+          The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
+          In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i>
+        </p>
+      </div>
+    </div>
+    <div class="timeline-item" data-text="FATHER OF THE TURKS">
+      <div class="timeline__content"><img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863"/>
+        <h2 class="timeline__content-title">1938</h2>
+        <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
+      </div>
+    </div> -->
+  </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="demo-footer">
+  Ⓒ2022 Yuuki Osada
+</div>
+<!-- partial -->
+<!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script> -->
+<script  src="./script.js"></script>
+<script  src="./scroll-z.js"></script>
+</body>
+</html>
