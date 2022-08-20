@@ -227,10 +227,6 @@
   font-family: Cardo;
 }
 
-a {
-  text-decoration: none;
-}
-
 /*shutter animation loading*/
 .shutter_1 {
   padding: 0;
@@ -754,4 +750,7 @@ a {
   100% {
     opacity: 0;
   }
+}
+a {
+  text-decoration: none;
 }
