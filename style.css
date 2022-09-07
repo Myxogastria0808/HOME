@@ -773,11 +773,13 @@ a {
   align-items: center;
   justify-content: center;
   background-color: #2f3238;
+  padding-bottom: 20px;
 }
 .h1 {
   background-color: #2f3238;
-  font-size: 50px;
-  font-family: "Pathway Gothic One", sans-serif;
+  font-size: 40px;
+  font-family: Garamond, serif;
+  font-weight: 900;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 10px;
