@@ -3,4 +3,4 @@
 > [!CAUTION]
 > このレポジトリは、絶対に消してはいけません。
 
-https://yukiosada.work/ にリダイレクトするサイト
+https://yukiosada.work/ にリダイレクトする
