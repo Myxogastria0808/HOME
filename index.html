@@ -39,7 +39,7 @@
       rel="manifest"
       href="https://raw.githubusercontent.com/Myxogastria0808/website/refs/heads/main/public/favicon/site.webmanifest"
     />
-    <!--- icon settings end *-->
+    <!-- icon settings end -->
     <!-- OG setting start -->
     <meta property="og:locale" content="en_US" />
     <meta property="og:site_name" content="Yuki Osada's Portfolio" />
@@ -59,8 +59,110 @@
     <meta name="twitter:site" content="@yuki_osada0808" />
     <meta name="twitter:creator" content="@yuki_osada0808" />
     <!-- Twitter card settings end -->
+    <!-- redirect -->
+    <meta http-equiv="refresh" content="3; url=https://yukiosada.work/" />
+    <link rel="canonical" href="https://yukiosada.work/" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Megrim&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Yuki Osada's Portfolio</title>
-  </head>
-  <body></body>
-</html>
+    <style>
+      :root {
+        --color-primary: #0288a9;
+        --color-secondary: #8cb4ce;
+        --color-background: #f7f5f2;
+        --border-width: 1.5px;
+        --border-default: var(--border-width) solid var(--color-secondary);
+        --radius-default: 0.5rem;
+        --space-xs: 0.125rem;
+        --space-sm: 0.5rem;
+        --space-md: 1rem;
+        --fs-7: calc(1rem * 10 / 7);
+        --fs-9: calc(1rem * 10 / 9);
+        --fs-10: 1rem;
+        --duration-xs: 0.2s;
+      }
 
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Noto Sans", sans-serif;
+        background: var(--color-background);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100svh;
+        padding: var(--space-md);
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-sm);
+        width: 360px;
+        max-width: 100%;
+        padding: var(--space-md);
+        border: var(--border-default);
+        border-radius: var(--radius-default);
+      }
+
+      .card-title {
+        font-family: "Megrim", system-ui;
+        font-weight: 400;
+        font-size: var(--fs-7);
+        color: var(--color-primary);
+      }
+
+      .card-desc {
+        font-size: var(--fs-9);
+        color: var(--color-primary);
+        line-height: 1.6;
+      }
+
+      .card-link {
+        font-size: var(--fs-10);
+        color: var(--color-primary);
+        text-decoration: none;
+        width: max-content;
+        border-bottom: var(--border-width) solid var(--color-secondary);
+        padding: 0 0 var(--space-xs) 0;
+        transition:
+          color var(--duration-xs),
+          border-color var(--duration-xs);
+      }
+
+      .card-link:hover {
+        color: var(--color-secondary);
+        border-color: transparent;
+      }
+
+      .card-note {
+        font-size: var(--fs-10);
+        color: var(--color-secondary);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <p class="card-title">Yuki Osada's Portfolio</p>
+      <p class="card-desc">
+        This page has moved.<br />You will be redirected in 3 seconds.
+      </p>
+      <a href="https://yukiosada.work/" class="card-link">https://yukiosada.work/</a>
+      <p class="card-note">If you are not redirected, click the link above.</p>
+    </div>
+    <script>
+      window.location.replace("https://yukiosada.work/");
+    </script>
+  </body>
+</html>
